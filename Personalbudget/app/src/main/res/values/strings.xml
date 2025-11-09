@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Личный бюджет</string>
+
+    <string-array name="transaction_types">
+        <item>Доход</item>
+        <item>Расход</item>
+    </string-array>
+</resources>

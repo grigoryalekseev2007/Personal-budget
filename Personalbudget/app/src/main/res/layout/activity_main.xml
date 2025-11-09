@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Заголовок -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Личный бюджет"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Сводка -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/card_background"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/balanceTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0.00 ₽"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/incomeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Доходы: 0.00 ₽"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/expenseTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Расходы: 0.00 ₽"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Кнопки действий -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/addTransactionBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Добавить"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/viewCategoriesBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Категории"
+            android:layout_marginStart="8dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/viewBudgetsBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Бюджеты"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Список операций -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Последние операции"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/transactionsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
