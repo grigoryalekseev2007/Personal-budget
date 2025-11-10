@@ -166,72 +166,72 @@
 - Переключение тем (светлая/темная)
 
 ## 4. Файловая структура проекта
-app/
-├── src/main/
-│ ├── java/com/personalbudget/app/
-│ │ ├── activities/
-│ │ │ ├── MainActivity.java
-│ │ │ ├── AddTransactionActivity.java
-│ │ │ ├── CategoriesActivity.java
-│ │ │ ├── BudgetsActivity.java
-│ │ │ └── ReportsActivity.java
-│ │ │
-│ │ ├── adapters/
-│ │ │ ├── TransactionAdapter.java
-│ │ │ ├── CategoryAdapter.java
-│ │ │ └── BudgetAdapter.java
-│ │ │
-│ │ ├── models/
-│ │ │ ├── Transaction.java
-│ │ │ ├── Category.java
-│ │ │ └── Budget.java
-│ │ │
-│ │ ├── database/
-│ │ │ ├── DatabaseHelper.java
-│ │ │ ├── DatabaseContract.java
-│ │ │ └── migrations/
-│ │ │
-│ │ ├── utils/
-│ │ │ ├── DateUtils.java
-│ │ │ ├── CurrencyFormatter.java
-│ │ │ ├── ThemeManager.java
-│ │ │ └── Validator.java
-│ │ │
-│ │ └── services/
-│ │ ├── BudgetCalculator.java
-│ │ ├── ReportGenerator.java
-│ │ └── NotificationService.java
-│ │
-│ ├── res/
-│ │ ├── layout/
-│ │ │ ├── activity_main.xml
-│ │ │ ├── activity_add_transaction.xml
-│ │ │ ├── activity_categories.xml
-│ │ │ ├── activity_budgets.xml
-│ │ │ ├── item_transaction.xml
-│ │ │ ├── item_category.xml
-│ │ │ └── item_budget.xml
-│ │ │
-│ │ ├── values/
-│ │ │ ├── strings.xml
-│ │ │ ├── colors.xml
-│ │ │ ├── styles.xml
-│ │ │ └── arrays.xml
-│ │ │
-│ │ ├── drawable/
-│ │ │ ├── ic_launcher.xml
-│ │ │ ├── card_background.xml
-│ │ │ ├── button_primary.xml
-│ │ │ └── progress_budget.xml
-│ │ │
-│ │ └── menu/
-│ │ └── main_menu.xml
-│ │
-│ └── AndroidManifest.xml
-│
-├── build.gradle
-├── proguard-rules.pro
-└── README.md
+- app/
+- ├── src/main/
+- │ ├── java/com/personalbudget/app/
+- │ │ ├── activities/
+- │ │ │ ├── MainActivity.java
+- │ │ │ ├── AddTransactionActivity.java
+- │ │ │ ├── CategoriesActivity.java
+- │ │ │ ├── BudgetsActivity.java
+- │ │ │ └── ReportsActivity.java
+- │ │ │
+- │ │ ├── adapters/
+- │ │ │ ├── TransactionAdapter.java
+- │ │ │ ├── CategoryAdapter.java
+- │ │ │ └── BudgetAdapter.java
+- │ │ │
+- │ │ ├── models/
+- │ │ │ ├── Transaction.java
+- │ │ │ ├── Category.java
+- │ │ │ └── Budget.java
+- │ │ │
+- │ │ ├── database/
+- │ │ │ ├── DatabaseHelper.java
+- │ │ │ ├── DatabaseContract.java
+- │ │ │ └── migrations/
+- │ │ │
+- │ │ ├── utils/
+- │ │ │ ├── DateUtils.java
+- │ │ │ ├── CurrencyFormatter.java
+- │ │ │ ├── ThemeManager.java
+- │ │ │ └── Validator.java
+- │ │ │
+- │ │ └── services/
+- │ │ ├── BudgetCalculator.java
+- │ │ ├── ReportGenerator.java
+- │ │ └── NotificationService.java
+- │ │
+- │ ├── res/
+- │ │ ├── layout/
+- │ │ │ ├── activity_main.xml
+- │ │ │ ├── activity_add_transaction.xml
+- │ │ │ ├── activity_categories.xml
+- │ │ │ ├── activity_budgets.xml
+- │ │ │ ├── item_transaction.xml
+- │ │ │ ├── item_category.xml
+- │ │ │ └── item_budget.xml
+- │ │ │
+- │ │ ├── values/
+- │ │ │ ├── strings.xml
+- │ │ │ ├── colors.xml
+- │ │ │ ├── styles.xml
+- │ │ │ └── arrays.xml
+- │ │ │
+- │ │ ├── drawable/
+- │ │ │ ├── ic_launcher.xml
+- │ │ │ ├── card_background.xml
+- │ │ │ ├── button_primary.xml
+- │ │ │ └── progress_budget.xml
+- │ │ │
+- │ │ └── menu/
+- │ │ └── main_menu.xml
+- │ │
+- │ └── AndroidManifest.xml
+- │
+- ├── build.gradle
+- ├── proguard-rules.pro
+- └── README.md
 
 ### Ключевые файлы и их назначение:
 
